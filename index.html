@@ -13,8 +13,8 @@
     <main>
         <div class="container">
             <header id="header">
-                <h1 id="title">NET <span>FLIX</span></h1>
-                <h3 id="description">Thank you for signing up to Redflex.Tell me more about yourself.</h3>
+                <h1 id="title">RED <span>FLEX</span></h1>
+                <h3 id="description">Thank you for signing up to Redflex. Tell me more about yourself.</h3>
             </header>
             <section id="survey-form-container">
                 <form action="result.html" method="get">
@@ -24,17 +24,17 @@
 
                     </div>
                     <div class="input-box">
-                        <label for="name">Name</label><br>
-                        <input type="text" name="name" id="name" placeholder="enter your name">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lname" id="lname" placeholder="enter your last name">
 
                     </div>
                     <div class="input-box">
                         <label for="age">Age</label><br>
-                        <input type="number" name="age" id="age" placeholder="enter your name">
+                        <input type="number" name="age" id="age" placeholder="enter your age">
 
                     </div>
                     <div class="input-box">
-                        <label for="email">Age</label><br>
+                        <label for="email">Email</label><br>
                         <input type="email" name="email" id="email" placeholder="enter your Email">
 
                     </div>
@@ -42,6 +42,7 @@
                 <div class="input-box">
                     <label for="">Content Type</label><br>
                     <select name="content" id="dropdown">
+                        <!--name: (after send) saved with this name on the backend -->
                         <option value="movies">Movie</option>
                         <option value="series">Series</option>
                         <option value="tvShows">TV Show</option>
@@ -59,20 +60,21 @@
                 <div class="input-box">
                     <label for="" id="radio">Gender</label><br>
                     <input type="radio" name="gender" id="first-radio" value="female">
-                    <label for="first-radio">male</label>
+                    <label for="first-radio">female</label><br>
                     <input type="radio" name="gender" id="second-radio" value="male">
-                    <label for="first-radio">male</label>
-                    <input type="radio" name="gender" id="thşrd-radio" value="other">
-                    <label for="first-radio">male</label>
+                    <label for="first-radio">male</label><br>
+                    <input type="radio" name="gender" id="third-radio" value="other">
+                    <label for="first-radio">other</label><br>
                 </div>
                 <div class="input-box">
                     <label for="">Feedback</label><br>
                     <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="any comment"></textarea>
                 </div>
 
-                <!-- <input value="submit" id="form-button" value="send"> -->
+
                 <div class="form-submit">
-                    <input type="submit" id="form-button" value="Send" />
+                    <!-- <input type="submit" id="form-button" value="Send" /> -->
+                    <button type="submit" id="form-button">Send</button>
                 </div>
 
                 </form>
